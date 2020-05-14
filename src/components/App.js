@@ -6,7 +6,8 @@ import {
 import Navbar from './Navbar'
 import AboutMe from './AboutMe'
 import ProjectGrid from './ProjectGrid'
-import projects from '../data/projects'
+import Timeline from './Timeline'
+
 
 
 
@@ -16,7 +17,8 @@ export default function App() {
 			<Navbar />
 
 			<AboutMe />
-			<ProjectGrid projects={projects} />
+			<ProjectGrid />
+			<Timeline />
 		</Container>
 	);
 }

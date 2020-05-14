@@ -5,9 +5,9 @@ import {
 } from '@material-ui/core';
 
 import ProjectCard from './ProjectCard'
+import projects from '../data/projects'
 
-
-export default function ProjectGrid({projects}) {
+export default function ProjectGrid() {
 
     return (
         <Grid container justify="center" spacing={2}>

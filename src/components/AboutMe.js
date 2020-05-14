@@ -24,9 +24,11 @@ export default function AboutMe(){
 
     return (
         <Grid container justify="center" alignItems="center">
-            <Grid item xs={12} sm={6}>
-                <Typography variant="h3" align="center">{heading}</Typography>
-                <Typography variant="h4" align="center">{subheading}</Typography>
+            <Grid item xs={12}>
+                <Typography variant="h4" align="center">{heading}</Typography>
+                <Typography variant="h6" align="center">{subheading}</Typography>
+            </Grid>
+            <Grid item xs={12} md={6}>
                 <br/>
                 {paragraphs.map((para) => (
                     <React.Fragment>
@@ -35,7 +37,7 @@ export default function AboutMe(){
                     </React.Fragment>
                 ))}
             </Grid>
-            <Grid item xs={12} sm={6}>
+            <Grid item xs={12} md={6}>
                 <Box align="center">
                     <img 
                         className={classes.portrait} 
