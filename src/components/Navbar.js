@@ -7,8 +7,6 @@ import {
     Toolbar,
     Typography,
     useScrollTrigger,
-    Container,
-    Box,
     IconButton,
     Link
 } from '@material-ui/core'
