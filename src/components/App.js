@@ -11,7 +11,7 @@ import projects from '../data/projects'
 
 export default function App() {
 	return (
-		<Container component="main">
+		<Container maxWidth="lg">
 			<Navbar />
 
 			<ProjectGrid projects={projects} />
