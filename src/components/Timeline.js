@@ -4,10 +4,13 @@ import React from 'react'
 // Material UI imports
 import {
     Typography,
+    Grid,
+    Box
 } from '@material-ui/core'
 import {
     Work,
     School,
+    Star,
 } from '@material-ui/icons'
 
 // A timeline component
@@ -17,31 +20,65 @@ import {
 } from 'react-vertical-timeline-component'
 import 'react-vertical-timeline-component/style.min.css';
 
+// Custom imports
+import timelineInfo from '../data/timeline'
+
+const styles = {
+    work: {
+        background: '#084177',
+        color: '#fff'
+    },
+    education: {
+        background: '#d63447',
+        color: '#fff'
+    },
+    start: {
+        background: '#2b580c',
+        color: '#fff'
+    }
+}
 export default function Timeline() {
     return (
-        <VerticalTimeline>
-            <VerticalTimelineElement
-                className="vertical-timeline-element--work"
-                contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-                contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
-                date="Oct 2019 - Feb 2020"
-                iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-                icon={<School />}
-            >
-                <Typography variant="h3" className="vertical-timeline-element-title" >PDX Code Guild</Typography>
-                <Typography variant="h4" className="vertical-timeline-element-subtitle" >Portland, OR</Typography>
-                <Typography variant="body1">A 14-week full-time, full-stack web design course.  Gained proficiency in HTML, CSS, JavaScript, and Python, using Vue.js and Django frameworks.</Typography>
+        <React.Fragment>
+            <Typography variant="h3" align="center">
+                Timeline
+            </Typography>
 
-            </VerticalTimelineElement>
-            <VerticalTimelineElement
-                className="vertical-timeline-element--work"
-                contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-                contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
-                date="2011 - present"
-                iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-                icon={<Work />}
-            >
-            </VerticalTimelineElement>
-        </VerticalTimeline>
+            {/* Timeline component, from npm */}
+            <VerticalTimeline>
+                {timelineInfo.map(({ type, dates, organization, location, position, description, imageUrl }) => (
+                    <VerticalTimelineElement
+                        className={`vertical-timeline-element--${type}`}
+                        contentStyle={type === 'work' ? styles.work : styles.education}
+                        date={dates}
+                        iconStyle={type === 'work' ? styles.work : styles.education}
+                        icon={type === 'work' ? <Work /> : <School />}
+                    >
+
+                    <Grid container justify="space-between">
+                        <Grid item xs={8}>
+                            <Typography variant="h4" className="vertical-timeline-element-title" >{organization}</Typography>
+                            <Typography variant="h5" className="vertical-timeline-element-subtitle" >{position}</Typography>
+                            <Typography variant="subtitle1" className="vertical-timeline-element-subtitle" >{location}</Typography>
+                        </Grid>
+                        <Grid item xs={4}>
+                            <Box align='center'>
+                                <img src={imageUrl} alt={`${organization} logo`} style={{borderRadius: '100%'}} />
+                            </Box>
+                        </Grid>
+                        <Grid item xs={12}>
+                            <Typography variant="body2">{description}</Typography>
+                        </Grid>
+                    </Grid>
+
+                    </VerticalTimelineElement>
+                ))}
+
+                <VerticalTimelineElement
+                    iconStyle={styles.start}
+                    icon={<Star />}
+                />
+            </VerticalTimeline>
+        </React.Fragment>
     )
 }

@@ -8,9 +8,6 @@ import AboutMe from './AboutMe'
 import ProjectGrid from './ProjectGrid'
 import Timeline from './Timeline'
 
-
-
-
 export default function App() {
 	return (
 		<Container maxWidth="lg">
