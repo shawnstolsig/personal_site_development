@@ -32,7 +32,7 @@ export default function App() {
 				<Hero />
 				<br />
 				<br />
-				<AboutMe id="aboutMe"/>
+				<AboutMe />
 				<br />
 				<br />
 				<ProjectGrid />
