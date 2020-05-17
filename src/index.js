@@ -2,7 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import 'typeface-roboto';
 import App from './components/App';
-import { MuiThemeProvider, createMuiTheme } from "@material-ui/core/styles";
+import { MuiThemeProvider, createMuiTheme } from "@material-ui/core/styles"; 
+import croppedStarImage from './assets/images/bg_cropped1.9_resized_milkyway.jpg'
 
 // setting a dark theme by default
 const muiTheme = createMuiTheme({
@@ -12,9 +13,19 @@ const muiTheme = createMuiTheme({
       800: "#000000", // overrides failed
       900: "#121212" // overrides success
     }
+  },
+  // overriding <body> to add background image
+  overrides: {
+    MuiCssBaseline: {
+      "@global": {
+        body: {
+          background:`url(${croppedStarImage}) no-repeat center center fixed`,
+          backgroundSize: 'cover'
+        }
+      }
+    }
   }
 });
-
 
 ReactDOM.render(
   <MuiThemeProvider theme={muiTheme}>

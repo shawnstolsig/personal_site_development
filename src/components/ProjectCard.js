@@ -13,13 +13,14 @@ import {
 const useStyles = makeStyles({
 	root: {
 		maxWidth: 290,
+		backgroundColor: 'rgba(1,1,1,.5)'
 	},
 	media: {
 		height: 290,
 	},
 });
 
-export default function ProjectCard({ title, imageUrl, description}) {
+export default function ProjectCard({ title, imageUrl, description }) {
 	const classes = useStyles();
 
 	return (

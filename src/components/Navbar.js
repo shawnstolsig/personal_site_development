@@ -54,7 +54,7 @@ export default function Navbar(props) {
                         <Typography
                             variant="h6"
                             className={classes.title}
-                        >Shawn Stolsig
+                        >Shawn Stolsig 
                         </Typography>
                         <Link
                             href="https://github.com/shawnstolsig"

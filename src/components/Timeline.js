@@ -2,6 +2,7 @@
 import React from 'react'
 
 // Material UI imports
+import { makeStyles } from '@material-ui/core/styles'
 import {
     Typography,
     Grid,

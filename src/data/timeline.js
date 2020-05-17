@@ -14,7 +14,7 @@ const timelineInfo = [
         organization: 'Amazon',
         location: 'Las Vegas, NV',
         position: 'Operations Manager',
-        description: 'Operations Manager at two different Amazon fulfilment centers in Las Vegas.  Worked in reverse logistics for the first year and a half, then transferred to work in a more traditional customer fulfillment operation. Let teams between 35-200 associates and 2-5 salaried managers.',
+        description: 'Operations Manager at two different Amazon fulfilment centers in Las Vegas.  Worked in reverse logistics for the first year and a half, then transferred to work in a more traditional outbound customer fulfillment operation. Let teams between 35-200 associates and 2-5 salaried managers.',
         imageUrl: 'https://media-exp1.licdn.com/dms/image/C560BAQFdwVGpSOHmgw/company-logo_100_100/0?e=1597881600&v=beta&t=VgxqHoaKf0WbttfhtUbg_2kfQNlrw70wxkDbX8HAVEs',
     },
     {
