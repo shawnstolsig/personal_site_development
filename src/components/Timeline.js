@@ -24,17 +24,24 @@ import 'react-vertical-timeline-component/style.min.css';
 // Custom imports
 import timelineInfo from '../data/timeline'
 
+// colors:
+// dark blue: #183661
+// light blue: #1c4b82
+// orange: #dd6b4d
+// light gray: #dae1e7
+
+
 const styles = {
     work: {
-        background: '#084177',
+        background: '#1c4b82',
         color: '#fff'
     },
     education: {
-        background: '#d63447',
+        background: '#1c4b82',
         color: '#fff'
     },
     start: {
-        background: '#2b580c',
+        background: '#183661',
         color: '#fff'
     }
 }

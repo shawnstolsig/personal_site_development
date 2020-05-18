@@ -19,7 +19,11 @@ import {
 const useStyles = makeStyles((theme) => ({
     title: {
         flexGrow: 1,
+        fontFamily: '\'Baumans\', cursive'
     },
+    hoverColor: {
+        color: '#084177'
+    }
 }));
 
 // this function adds elevation to the children (in this case an AppBar) when scrolled
@@ -33,7 +37,7 @@ function ElevationScroll(props) {
     // set higher elevation and a solid background color when scroll triggered
     return React.cloneElement(children, {
         elevation: trigger ? 4 : 0,
-        color: trigger ? 'primary' : 'transparent'
+        color: trigger ? 'theme.palette.background.paper' : 'transparent'
     });
 }
 

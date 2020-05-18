@@ -14,6 +14,7 @@ const useStyles = makeStyles((theme) => ({
     heroContent: {
       backgroundColor: theme.palette.background.paper,
       padding: theme.spacing(8, 0, 6),
+      borderRadius: '3px',
     },
     heroButtons: {
       marginTop: theme.spacing(4),
