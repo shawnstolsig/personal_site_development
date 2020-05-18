@@ -2,7 +2,6 @@
 import React from 'react'
 
 // Material UI imports
-import { makeStyles } from '@material-ui/core/styles'
 import {
     Typography,
     Grid,
@@ -33,17 +32,17 @@ import timelineInfo from '../data/timeline'
 
 const styles = {
     work: {
-        background: '#1c4b82',
+        background: '#115293',
         color: '#fff'
     },
     education: {
-        background: '#1c4b82',
+        background: '#115293',
         color: '#fff'
     },
     start: {
-        background: '#183661',
+        background: '#115293',
         color: '#fff'
-    }
+    },
 }
 export default function Timeline() {
     return (

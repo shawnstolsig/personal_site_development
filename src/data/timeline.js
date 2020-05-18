@@ -14,7 +14,7 @@ const timelineInfo = [
         organization: 'Amazon',
         location: 'Las Vegas, NV',
         position: 'Operations Manager',
-        description: 'Operations Manager at two different Amazon fulfilment centers in Las Vegas.  Worked in reverse logistics for the first year and a half, then transferred to work in a more traditional outbound customer fulfillment operation. Let teams between 35-200 associates and 2-5 salaried managers.',
+        description: 'I was an Operations Manager at two different Amazon fulfillment centers in Las Vegas. After working in reverse logistics for the first year and a half, I transferred to a traditional fulfillment center operation where I was responsible for all daytime outbound operations and led a team of 215 hourly associates and five salaried managers.',
         imageUrl: 'https://media-exp1.licdn.com/dms/image/C560BAQFdwVGpSOHmgw/company-logo_100_100/0?e=1597881600&v=beta&t=VgxqHoaKf0WbttfhtUbg_2kfQNlrw70wxkDbX8HAVEs',
     },
     {
@@ -23,7 +23,7 @@ const timelineInfo = [
         organization: 'UCLA: Anderson',
         location: 'Los Angeles, CA',
         position: 'MBA Candidate',
-        description: 'I got my master of business administration degree after enrolling in the UCLA Anderson School of Management full-time MBA program. I followed the school\'s technology management track, which culminated in an 18-student, self-managed software development capstone project (we implemented a new student club portal).',
+        description: 'I got my master of business administration degree after enrolling in the UCLA Anderson School of Management full-time MBA program. I followed the school\'s technology management track, which culminated in an 18-student, self-managed software development capstone project (we implemented a new student club portal using ASP.NET).',
         imageUrl: 'https://media-exp1.licdn.com/dms/image/C560BAQEie8vD0XYgWg/company-logo_100_100/0?e=1597881600&v=beta&t=OLJ3G-FVKtq8nNIwTDfHoP1XZqJMR4_Au_0ts854_QE',
     },
     {
@@ -32,7 +32,7 @@ const timelineInfo = [
         organization: 'Cisco',
         location: 'San Jose, CA',
         position: 'Product Manager Intern',
-        description: 'I completed a 10-week internship as a Product Manager intern at Cisco between my first and second years at business school. I worked with their routing team on a project involving virtualizing hardware at branch locations.',
+        description: 'I completed a paid, 10-week product manager internship at Cisco between my first and second year of business school. I worked with Cisco\'s router team on a project involving virtualizing hardware at branch locations.',
         imageUrl: 'https://media-exp1.licdn.com/dms/image/C4D0BAQHO_cO49I_FRA/company-logo_100_100/0?e=1597881600&v=beta&t=SPNoz2QaNXJSmqNus_l4fiou_rGSaTFulQC90DLz_5E',
     },
     {
@@ -41,7 +41,7 @@ const timelineInfo = [
         organization: 'US Navy',
         location: 'Bremerton, WA ▪ Cape Canaveral, FL',
         position: 'Submarine Officer',
-        description: 'After a year and a half of training, I spent three years serving aboard the USS Maine based in Washington state. After rotating to shore duty, I was a port operations officer in Cape Canaveral, FL.',
+        description: 'After a year and a half of nuclear power training, I served for three years as a division officer aboard the USS Maine in Washington state. I rotated to shore duty in 2013, where I was a port operations officer in Cape Canaveral, FL.',
         imageUrl: 'https://media-exp1.licdn.com/dms/image/C4E0BAQFWVXDWsH7EzQ/company-logo_100_100/0?e=1597881600&v=beta&t=8EGM_m04VoP97gqssOartpG011hhLDLdR8P8ReWbl3M',
     },
     {
@@ -50,7 +50,7 @@ const timelineInfo = [
         organization: 'US Naval Academy',
         location: 'Annapolis, MD',
         position: 'Student',
-        description: 'Earned a bachelors of science, majoring in computer science. For extracurriculars, I was on the varsity offshore sailing team and formed a student rock band that performed at pep rallies and tailgaters (I played guitar).',
+        description: 'Earned a bachelors of science, majoring in computer science. For extracurriculars, I was on the varsity offshore sailing team and played guitar in a student rock band that performed at pep rallies and tailgaters.',
         imageUrl: 'https://media-exp1.licdn.com/dms/image/C510BAQEc7soCuF6SvA/company-logo_100_100/0?e=1597881600&v=beta&t=9OAQ_yir-rrgrwQ57r0FmP01v-vCiwfRbmexi0UBVa8',
     },
 

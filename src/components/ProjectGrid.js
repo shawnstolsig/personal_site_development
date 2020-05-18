@@ -15,7 +15,7 @@ export default function ProjectGrid() {
             {/* Page title */}
             <Grid item xs={12}>
                 <Typography variant="h3" align="center">
-                    The Cage
+                    Projects
                 </Typography>
             </Grid>
 
