@@ -21,7 +21,7 @@ import {
 import 'react-vertical-timeline-component/style.min.css';
 
 // Custom imports
-import timelineInfo from '../data/timeline'
+import timelineInfo from '../assets/content/timeline'
 
 // colors:
 // dark blue: #183661
@@ -60,6 +60,7 @@ export default function Timeline() {
                         date={dates}
                         iconStyle={type === 'work' ? styles.work : styles.education}
                         icon={type === 'work' ? <Work /> : <School />}
+                        key={dates}
                     >
 
                     <Grid container justify="space-between">

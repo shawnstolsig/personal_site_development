@@ -6,7 +6,6 @@ import {
     Box,
     Card,
     CardContent,
-    Container   
 } from '@material-ui/core'
 
 import {
@@ -21,7 +20,7 @@ import {
 import { DiDjango } from 'react-icons/di'
 
 import portrait from '../assets/images/me.jpeg'
-import aboutMe from '../data/aboutme'
+import aboutMe from '../assets/content/aboutme'
 
 // styles
 const useStyles = makeStyles((theme) => ({
@@ -41,7 +40,7 @@ const useStyles = makeStyles((theme) => ({
 
 export default function AboutMe(){
     const classes = useStyles()
-    const {heading, subheading, paragraphs, stack} = aboutMe
+    const {heading, subheading, paragraphs} = aboutMe
 
     return (
         <Card className={classes.root}>
@@ -55,7 +54,7 @@ export default function AboutMe(){
                     <Grid item xs={12} md={8}>
                         <br/>
                         {paragraphs.map((para) => (
-                            <React.Fragment>
+                            <React.Fragment key={para}>
                                 <Typography variant="body1">{para}</Typography>
                                 <br/>
                             </React.Fragment>

@@ -37,7 +37,7 @@ function ElevationScroll(props) {
     // set higher elevation and a solid background color when scroll triggered
     return React.cloneElement(children, {
         elevation: trigger ? 4 : 0,
-        color: trigger ? 'theme.palette.background.paper' : 'transparent'
+        color: trigger ? 'inherit' : 'transparent'
     });
 }
 

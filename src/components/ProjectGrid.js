@@ -5,7 +5,7 @@ import {
 } from '@material-ui/core';
 
 import ProjectCard from './ProjectCard'
-import projects from '../data/projects'
+import projects from '../assets/content/projects'
 
 export default function ProjectGrid() {
 
@@ -20,12 +20,10 @@ export default function ProjectGrid() {
             </Grid>
 
             {/* Project cards */}
-            {projects.map(({title, description, imageUrl}) => (
-                <Grid key={title} item>
+            {projects.map((project) => (
+                <Grid key={project.title} item>
                     <ProjectCard 
-                        title={title}
-                        description={description}
-                        imageUrl={imageUrl}
+                        {...project}
                     />
                 </Grid>
             ))}
