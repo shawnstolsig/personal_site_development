@@ -12,8 +12,10 @@ import {
 } from '@material-ui/core'
 import {
     GitHub,
-    LinkedIn
+    LinkedIn,
+    AttachFile
 } from '@material-ui/icons'
+import resume from '../assets/resume/resume.pdf'
 
 // styles
 const useStyles = makeStyles((theme) => ({
@@ -65,7 +67,8 @@ export default function Navbar(props) {
                             color="inherit">
                             <IconButton
                                 color="inherit"
-                                aria-label="GitHub">
+                                aria-label="GitHub"
+                                title="GitHub">
                                 <GitHub />
                             </IconButton>
                         </Link>
@@ -74,8 +77,19 @@ export default function Navbar(props) {
                             color="inherit">
                             <IconButton
                                 color="inherit"
-                                aria-label="LinkedIn">
+                                aria-label="LinkedIn"
+                                title="LinkedIn">
                                 <LinkedIn />
+                            </IconButton>
+                        </Link>
+                        <Link
+                            href={resume}
+                            color="inherit">
+                            <IconButton
+                                color="inherit"
+                                aria-label="Resume"
+                                title="Resume">
+                                <AttachFile />
                             </IconButton>
                         </Link>
                     </Toolbar>

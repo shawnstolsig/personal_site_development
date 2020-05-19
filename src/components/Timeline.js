@@ -23,13 +23,6 @@ import 'react-vertical-timeline-component/style.min.css';
 // Custom imports
 import timelineInfo from '../assets/content/timeline'
 
-// colors:
-// dark blue: #183661
-// light blue: #1c4b82
-// orange: #dd6b4d
-// light gray: #dae1e7
-
-
 const styles = {
     work: {
         background: '#115293',

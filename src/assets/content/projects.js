@@ -1,7 +1,11 @@
+// media imports
 import shiftManagrPreview from '../images/shiftManagr.png'
 import shiftManagrVideo from '../videos/shiftManagr.mp4'
+
 import eftLootTrainerPreview from '../images/eftLootTrainer.png'
 import eftLootTrainerVideo from '../videos/eftLootTrainer.mp4'
+
+import portfolioPreview from '../images/portfolio.png'
 
 // data for project cards
 const projects = [
@@ -29,6 +33,18 @@ const projects = [
 		repoUrl: "https://github.com/shawnstolsig/tarkov_loot_simulator",
 		demoUrl: null,
 		stack: ['HTML', 'CSS', 'JavaScript', 'Python', 'Vue.js', 'Vuetify', 'Django', 'Django REST Framework', 'SQLite'],
+	},
+	{
+		title: "Personal Website",
+		imageUrl: portfolioPreview,
+		videoUrl: null,
+		caption: "This website!",
+		description: [
+			"A personal website for my portfolio and information about myself.",
+		],
+		repoUrl: "https://github.com/shawnstolsig/personal_site_development",
+		demoUrl: "https://www.shawnstolsig.com",
+		stack: ['HTML', 'CSS', 'JavaScript', 'React.js', 'Material-UI'],
 	},
 
 ]

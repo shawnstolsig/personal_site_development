@@ -125,17 +125,18 @@ export default function ProjectCard({ title, imageUrl, caption, description, rep
 						</DialogTitle>
 						<DialogContent>
 							<Grid container>
-								<Grid item xs={12}>
-									<Card elevation={0} className={classes.largeCardMediaRoot}>
-										<CardMedia
-											autoPlay
-											controls
-											component="video"
-											src={videoUrl}
-											title={title}
-										/>
-									</Card>
-								</Grid>
+								{videoUrl &&
+									<Grid item xs={12}>
+										<Card elevation={0} className={classes.largeCardMediaRoot}>
+											<CardMedia
+												autoPlay
+												controls
+												component="video"
+												src={videoUrl}
+												title={title}
+											/>
+										</Card>
+									</Grid> }
 								<Grid item xs={12}>
 									<Grid container>
 										<Grid item xs={12} lg={8}>
@@ -200,7 +201,7 @@ export default function ProjectCard({ title, imageUrl, caption, description, rep
 																color="primary"
 																href={demoUrl}
 																className={classes.linkButton}
-																>Demo
+																>Hosted
 															</Button>
 														}
 													</Box>
