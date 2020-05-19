@@ -1,5 +1,7 @@
 import shiftManagrPreview from '../images/shiftManagr.png'
 import shiftManagrVideo from '../videos/shiftManagr.mp4'
+import eftLootTrainerPreview from '../images/eftLootTrainer.png'
+import eftLootTrainerVideo from '../videos/eftLootTrainer.mp4'
 
 // data for project cards
 const projects = [
@@ -15,7 +17,18 @@ const projects = [
 		repoUrl: "https://github.com/shawnstolsig/pdx_code_guild_capstone",
 		demoUrl: null,
 		stack: ['HTML', 'CSS', 'JavaScript', 'Python', 'Vue.js', 'Vuex', 'Vuetify', 'Django', 'Django REST Framework', 'JSON Web Token Authentication', 'SQLite'],
-		stackDesc: "This is a full-stack app using a Vue.js frontend and Django (with Django REST Framework) backend. I leveraged the Vuetify component library for UI and authentication is handled using JSON web tokens. For demo/development purposes, I used a SQLite database."
+	},
+	{
+		title: "EFT: Loot Trainer",
+		imageUrl: eftLootTrainerPreview,
+		videoUrl: eftLootTrainerVideo,
+		caption: "A mini-game to train looting proficiency in Escape from Tarkov (a computer game).",
+		description: [
+			"This app is a simple mini-game I created for Escape from Tarkov (EFT) computer game. The idea was to create a UI similiar to what players experience in the game, where they must visually identify items and choose the most valuable items to loot. Since the value of each item changes dynamically through EFT's in-game flea market, I leveraged a community-created API from Tarkov Market (https://tarkov-market.com/) to pull Rouble values for each of the games 2000+ items. I created my own backend/database to store these values as the API is rate-limited.",
+		],
+		repoUrl: "https://github.com/shawnstolsig/tarkov_loot_simulator",
+		demoUrl: null,
+		stack: ['HTML', 'CSS', 'JavaScript', 'Python', 'Vue.js', 'Vuetify', 'Django', 'Django REST Framework', 'SQLite'],
 	},
 
 ]

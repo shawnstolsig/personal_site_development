@@ -40,8 +40,6 @@ const useStyles = makeStyles((theme) => ({
 	},
 	paper: {
 		backgroundColor: theme.palette.background.paper,
-		border: '2px solid #000',
-		boxShadow: theme.shadows[5],
 		padding: theme.spacing(2, 4, 3),
 	},
 	chip: {
@@ -88,10 +86,10 @@ export default function ProjectCard({ title, imageUrl, caption, description, rep
 						title={title}
 					/>
 					<CardContent>
-						<Typography gutterBottom variant="h5" component="h2">
+						<Typography gutterBottom variant="h5">
 							{title}
 						</Typography>
-						<Typography variant="body2" color="textSecondary" component="p">
+						<Typography variant="body2" color="textSecondary">
 							{caption}
 						</Typography>
 					</CardContent>
@@ -116,7 +114,7 @@ export default function ProjectCard({ title, imageUrl, caption, description, rep
 			>
 				<Fade in={open}>
 					<div className={classes.paper}>
-						<DialogTitle>
+						<DialogTitle disableTypography>
 							<Typography variant="h4" align="center">{title}</Typography>
 							<IconButton
 								aria-label="close"
@@ -213,36 +211,6 @@ export default function ProjectCard({ title, imageUrl, caption, description, rep
 								</Grid>
 							</Grid>
 						</DialogContent>
-						{/* <div className={classes.paper}>
-						<Grid container>
-							<Grid item xs={12} lg={4}>
-								<Grid container spacing={2}>
-									<Grid item xs={12}>
-										<Typography variant="h4" align="center">{title}</Typography>
-									</Grid>
-									<Grid item xs={12}>
-										{description.map((para) => (
-											<React.Fragment key={para}>
-												<Typography variant="body1">{para}</Typography>
-												<br />
-											</React.Fragment>
-										))}
-									</Grid>
-								</Grid>
-							</Grid>
-							<Grid item xs={12} lg={8}>
-								<Card elevation={0}>
-									<CardMedia
-										autoPlay
-										component="video"
-										className={classes.largeCardMedia}
-										src={videoUrl}
-										title={title}
-									/>
-								</Card>
-							</Grid>
-						</Grid>
-					</div> */}
 					</div>
 				</Fade>
 			</Dialog>

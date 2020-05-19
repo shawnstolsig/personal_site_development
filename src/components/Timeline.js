@@ -43,6 +43,11 @@ const styles = {
         background: '#115293',
         color: '#fff'
     },
+    companyLogo: {
+        maxWidth: 80,
+        maxHeight: 80,
+        borderRadius: '100%'
+    }
 }
 export default function Timeline() {
     return (
@@ -65,13 +70,13 @@ export default function Timeline() {
 
                     <Grid container justify="space-between">
                         <Grid item xs={8}>
-                            <Typography variant="h4" className="vertical-timeline-element-title" >{organization}</Typography>
-                            <Typography variant="h5" className="vertical-timeline-element-subtitle" >{position}</Typography>
+                            <Typography variant="h5" className="vertical-timeline-element-title" >{organization}</Typography>
+                            <Typography variant="h6" className="vertical-timeline-element-subtitle" >{position}</Typography>
                             <Typography variant="subtitle1" className="vertical-timeline-element-subtitle" >{location}</Typography>
                         </Grid>
                         <Grid item xs={4}>
                             <Box align='center'>
-                                <img src={imageUrl} alt={`${organization} logo`} style={{borderRadius: '100%'}} />
+                                <img src={imageUrl} alt={`${organization} logo`} style={styles.companyLogo} />
                             </Box>
                         </Grid>
                         <Grid item xs={12}>

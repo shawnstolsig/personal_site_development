@@ -27,7 +27,7 @@ const useStyles = makeStyles((theme) => ({
     portrait: {
         borderRadius: '30%',
         // maxHeight: "200px",
-        maxWidth: "350px",
+        maxWidth: "300px",
         margin: '12px',
     },
     stackGrid: {
