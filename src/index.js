@@ -19,8 +19,18 @@ const muiTheme = createMuiTheme({
     MuiCssBaseline: {
       "@global": {
         body: {
+          // content: "",
+          // position: "fixed",
+          // top: 0,
+          // left: 0,
+          // right: 0,
+          // zIndex: -1,
+          height: '100vh',
           background:`url(${croppedStarImage}) no-repeat center center fixed`,
-          backgroundSize: 'cover'
+          webkitBackgroundSize: 'cover',
+          OBackgroundSize: 'cover',
+          MozBackgroundSize: 'cover',
+          backgroundSize: 'cover',
         }
       }
     }

@@ -36,7 +36,8 @@ const useStyles = makeStyles((theme) => ({
 	},
 	largeCardMedia: {
 		maxHeight: '70vh',
-		width: 'auto'
+		maxWidth: '90vw',
+		width: 'auto',
 	},
 	modal: {
 		display: 'flex',
@@ -55,7 +56,7 @@ const useStyles = makeStyles((theme) => ({
 	},
 	closeButton: {
 		position: 'absolute',
-		right: theme.spacing(1),
+		right: theme.spacing(7),
 		top: theme.spacing(1),
 		color: theme.palette.grey[500],
 	},
@@ -147,7 +148,6 @@ export default function ProjectCard({ title, imageUrl, caption, description, rep
 											>
 											<CardMedia
 												loop
-												autoPlay
 												controls
 												component="video"
 												src={videoUrl}
