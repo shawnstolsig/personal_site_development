@@ -24,6 +24,7 @@ import CloseIcon from '@material-ui/icons/Close';
 const useStyles = makeStyles((theme) => ({
 	root: {
 		maxWidth: 290,
+		height: 463,
 		backgroundColor: 'rgba(1,1,1,.5)'
 	},
 	smallCardMedia: {
@@ -31,7 +32,11 @@ const useStyles = makeStyles((theme) => ({
 	},
 	largeCardMediaRoot: {
 		elevation: 0,
-		margin: theme.spacing(2)
+		margin: theme.spacing(2),
+	},
+	largeCardMedia: {
+		maxHeight: '70vh',
+		width: 'auto'
 	},
 	modal: {
 		display: 'flex',
@@ -56,6 +61,9 @@ const useStyles = makeStyles((theme) => ({
 	},
 	linkButton: {
 		margin: theme.spacing(0.5)
+	},
+	dialogTitle: {
+		padding: 0
 	}
 }));
 
@@ -114,8 +122,13 @@ export default function ProjectCard({ title, imageUrl, caption, description, rep
 			>
 				<Fade in={open}>
 					<div className={classes.paper}>
-						<DialogTitle disableTypography>
-							<Typography variant="h4" align="center">{title}</Typography>
+						<DialogTitle disableTypography className={classes.dialogTitle}>
+							<Typography 
+								variant="h4" 
+								align="center"
+								
+								>{title} 
+							</Typography>
 							<IconButton
 								aria-label="close"
 								className={classes.closeButton}
@@ -127,13 +140,19 @@ export default function ProjectCard({ title, imageUrl, caption, description, rep
 							<Grid container>
 								{videoUrl &&
 									<Grid item xs={12}>
-										<Card elevation={0} className={classes.largeCardMediaRoot}>
+										<Card 
+											elevation={0} 
+											className={classes.largeCardMediaRoot}
+											align="center"
+											>
 											<CardMedia
+												loop
 												autoPlay
 												controls
 												component="video"
 												src={videoUrl}
 												title={title}
+												className={classes.largeCardMedia}
 											/>
 										</Card>
 									</Grid> }
