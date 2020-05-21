@@ -147,6 +147,8 @@ export default function ProjectCard({ title, imageUrl, caption, description, rep
 											align="center"
 											>
 											<CardMedia
+												playsInline
+												autoPlay
 												loop
 												controls
 												component="video"
