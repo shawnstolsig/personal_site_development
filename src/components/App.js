@@ -13,6 +13,7 @@ import AboutMe from './AboutMe'
 import ProjectGrid from './ProjectGrid'
 import Timeline from './Timeline'
 import Hero from './Hero'
+import ContactForm from './ContactForm'
 
 export default function App() {
 	return (
@@ -33,6 +34,7 @@ export default function App() {
 				<Timeline />
 				<br />
 				<br />
+				<ContactForm />
 			</Container>
 		</React.Fragment>
 	);
