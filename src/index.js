@@ -27,8 +27,8 @@ const muiTheme = createMuiTheme({
             right: 0,
             zIndex: -1,
             height: '100vh',
-            background: `url(${croppedStarImage}) no-repeat center center fixed`, // maybe just center center
-            webkitBackgroundSize: 'cover',
+            background: `url(${croppedStarImage}) center center`, // maybe just center center
+            WebkitBackgroundSize: 'cover',
             OBackgroundSize: 'cover',
             MozBackgroundSize: 'cover',
             backgroundSize: 'cover',
