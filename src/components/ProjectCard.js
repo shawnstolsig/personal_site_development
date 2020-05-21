@@ -105,80 +105,6 @@ export default function ProjectCard({ title, imageUrl, caption, description, rep
                 </CardActionArea>
             </Card>
 
-<<<<<<< HEAD
-			{/* this modal pops out to show project details when "learn more" is clicked */}
-			<Dialog
-				fullWidth={true}
-				maxWidth='lg'
-				fullScreen={fullScreen}
-				aria-labelledby="transition-modal-title"
-				aria-describedby="transition-modal-description"
-				className={classes.modal}
-				open={open}
-				onClose={handleClose}
-				closeAfterTransition
-				BackdropComponent={Backdrop}
-				BackdropProps={{
-					timeout: 500,
-				}}
-			>
-				<Fade in={open}>
-					<div className={classes.paper}>
-						<DialogTitle disableTypography className={classes.dialogTitle}>
-							<Typography 
-								variant="h4" 
-								align="center"
-								
-								>{title} 
-							</Typography>
-							<IconButton
-								aria-label="close"
-								className={classes.closeButton}
-								onClick={handleClose}>
-								<CloseIcon />
-							</IconButton>
-						</DialogTitle>
-						<DialogContent>
-							<Grid container>
-								{videoUrl &&
-									<Grid item xs={12}>
-										<Card 
-											elevation={0} 
-											className={classes.largeCardMediaRoot}
-											align="center"
-											>
-											<CardMedia
-												playsInline
-												autoPlay
-												loop
-												controls
-												component="video"
-												src={videoUrl}
-												title={title}
-												className={classes.largeCardMedia}
-											/>
-										</Card>
-									</Grid> }
-								<Grid item xs={12}>
-									<Grid container>
-										<Grid item xs={12} lg={8}>
-											<Typography
-												variant="h6"
-												align="center"
-											>Description
-											</Typography>
-											<Divider variant="middle" />
-											<Box className={classes.gridContainerMargin}>
-												{description.map((para) => (
-													<Typography
-														key={para}
-														variant="body1"
-														gutterBottom
-													>{para}
-													</Typography>
-												))}
-											</Box>
-=======
             {/* this modal pops out to show project details when "learn more" is clicked */}
             <Dialog
                 fullWidth={true}
@@ -251,7 +177,6 @@ export default function ProjectCard({ title, imageUrl, caption, description, rep
                                                     </Typography>
                                                 ))}
                                             </Box>
->>>>>>> 77f1cc96ed30f66b5f17aa75dbd90dcf25c4d6e6
 
                                         </Grid>
                                         <Grid item xs={12} lg={4}>
