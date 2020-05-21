@@ -24,7 +24,7 @@ const useStyles = makeStyles((theme) => ({
         fontFamily: '\'Baumans\', cursive'
     },
     hoverColor: {
-        color: '#084177'
+        color: '#084177',
     },
 }));
 
@@ -45,6 +45,7 @@ function ElevationScroll(props) {
             borderImageSlice: 1,
             borderWidth: '4px',
             borderImageSource: 'linear-gradient(to left, #537394, #003469',
+            borderImageWidth: '0px 0px 4px 0px'
          } : null
     });
 }
