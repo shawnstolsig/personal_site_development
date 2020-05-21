@@ -75,7 +75,7 @@ export default function ContactForm() {
                     justify="center"
                     spacing={2}>
                     <Grid item xs={12}>
-                        <Typography variant="h4" align="center">Contact Me</Typography>
+                        <Typography variant="h3" align="center">Contact Me</Typography>
                     </Grid>
                     <Grid item xs={12} md={6}>
                         <Box align="center">
