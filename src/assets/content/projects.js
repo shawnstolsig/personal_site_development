@@ -6,6 +6,9 @@ import eftLootTrainerVideo from '../videos/eftLootTrainer.mp4'
 import chirpPreview from '../images/chirp.png'
 import chirpVideo from '../videos/chirp.mp4'
 import portfolioPreview from '../images/portfolio.png'
+import pychallengesPreview from '../images/pyChallenges.png'
+// import pychallengesVideo from '../videos/pyChallenges.mp4'
+
 
 // data for project cards
 const projects = [
@@ -19,8 +22,21 @@ const projects = [
             "I created shiftMANAGR as my capstone project while at PDX Code Guild." 
         ],
         repoUrl: "https://github.com/shawnstolsig/pdx_code_guild_capstone",
-        demoUrl: null,
+        demoUrl: "https://shiftmanagr.herokuapp.com/",
         stack: ['HTML', 'CSS', 'JavaScript', 'Python', 'Vue.js', 'Vuex', 'Vuetify', 'Django', 'Django REST Framework', 'JSON Web Token Authentication', 'SQLite'],
+    },
+    {
+        title: "PyChallenges",
+        imageUrl: pychallengesPreview,
+        // videoUrl: pychallengesVideo,
+        videoUrl: null,
+        caption: "A website for practicing common coding challenges in Python.",
+        description: [
+            "I wanted to experiment with writing Python in the browser (and also brush up on some algorithms!), so I decided to create a Python coding challenge app similar to HackerRank or Codewars.  This project leverages the Pyodide library for interpreting Python within Javascript.  Pyodide also enables easy translation of Python objects/functions back into Javascript, which helped with writing tests for user's code.  Finally, this app has a full backend for user authentication, tracking user's progress through the coding challenges, and allowing for saving/re-opening code snippets.",
+        ],
+        repoUrl: "https://github.com/shawnstolsig/py_challenges",
+        demoUrl: "https://pychallenges.herokuapp.com/",
+        stack: ['HTML', 'CSS', 'JavaScript', 'Python', 'React.js', 'Material UI', 'Django', 'Django REST Framework', 'SQLite', 'Pyodide'],
     },
     {
         title: "EFT: Loot Trainer",
@@ -52,7 +68,7 @@ const projects = [
         videoUrl: null,
         caption: "This website!",
         description: [
-            "A personal website for my portfolio and information about myself.  You're already on it!",
+            "A personal website for my portfolio and information about myself.  You're on it!",
         ],
         repoUrl: "https://github.com/shawnstolsig/personal_site_development",
         demoUrl: "https://www.shawnstolsig.com",
