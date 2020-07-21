@@ -26,12 +26,11 @@ import aboutMe from '../assets/content/aboutme'
 const useStyles = makeStyles((theme) => ({
     portrait: {
         borderRadius: '30%',
-        // maxHeight: "200px",
         maxWidth: "300px",
-        margin: '12px',
     },
     stackGrid: {
-        backgroundColor: 'primary'
+        backgroundColor: 'primary',
+        marginTop: theme.spacing(1)
     },
     root: {
         backgroundColor: 'rgba(1,1,1,.5)'
@@ -40,7 +39,7 @@ const useStyles = makeStyles((theme) => ({
 
 export default function AboutMe(){
     const classes = useStyles()
-    const {heading, subheading, paragraphs} = aboutMe
+    const {paragraphs} = aboutMe
 
     return (
         <Card className={classes.root}>
@@ -48,16 +47,17 @@ export default function AboutMe(){
 
                 <Grid container justify="center" alignItems="center" className={classes.gridContainer}>
                     <Grid item xs={12}>
-                        <Typography variant="h4" align="center">{heading}</Typography>
-                        <Typography variant="h6" align="center">{subheading}</Typography>
+                        <Typography variant="h3" align="center">About Me</Typography>
                     </Grid>
                     <Grid item xs={12} md={8}>
                         <br/>
                         {paragraphs.map((para) => (
-                            <React.Fragment key={para}>
-                                <Typography variant="body1">{para}</Typography>
-                                <br/>
-                            </React.Fragment>
+                            <Typography 
+                                variant="body1" 
+                                key={para}
+                                gutterBottom
+                                >{para}
+                            </Typography>
                         ))}
                     </Grid>
                     <Grid item xs={12} md={4}>
@@ -71,26 +71,40 @@ export default function AboutMe(){
                     </Grid>
                     <Grid item xs={12}>
                         <Grid container className={classes.stackGrid}  justify='space-between'>
-                            <Grid item xs={1} title="HTML">
-                                <FaHtml5 style={{fontSize: '40'}}/>
+                            <Grid item xs={3} md={1} title="HTML">
+                                <Box align="center">
+                                    <FaHtml5 style={{fontSize: '40'}}/>
+                                </Box>
                             </Grid>
-                            <Grid item xs={1} title="CSS">
-                                <FaCss3 style={{fontSize: '40'}}/>
+                            <Grid item xs={3} md={1} title="CSS">
+                                <Box align="center">
+                                    <FaCss3 style={{fontSize: '40'}}/>
+                                </Box>
                             </Grid>
-                            <Grid item xs={1} title="JavaScript">
-                                <FaJs style={{fontSize: '40'}}/>
+                            <Grid item xs={3} md={1} title="JavaScript">
+                                <Box align="center">
+                                    <FaJs style={{fontSize: '40'}}/>
+                                </Box>
                             </Grid>
-                            <Grid item xs={1} title="Python">
-                                <FaPython style={{fontSize: '40'}}/>
+                            <Grid item xs={3} md={1} title="Python">
+                                <Box align="center">
+                                    <FaPython style={{fontSize: '40'}}/>
+                                </Box>
                             </Grid>
-                            <Grid item xs={1} title="React.js">
-                                <FaReact style={{fontSize: '40'}}/>
+                            <Grid item xs={3} md={1} title="React.js">
+                                <Box align="center">
+                                    <FaReact style={{fontSize: '40'}}/>
+                                </Box>
                             </Grid>
-                            <Grid item xs={1} title="Vue.js">
-                                <FaVuejs style={{fontSize: '40'}}/>
+                            <Grid item xs={3} md={1} title="Vue.js">
+                                <Box align="center">
+                                    <FaVuejs style={{fontSize: '40'}}/>
+                                </Box>
                             </Grid>
-                            <Grid item xs={1} title="Django">
-                                <DiDjango style={{fontSize: '40'}}/>
+                            <Grid item xs={3} md={1} title="Django">
+                                <Box align="center">
+                                    <DiDjango style={{fontSize: '40'}}/>
+                                </Box>
                             </Grid>
                         </Grid>
                     </Grid>

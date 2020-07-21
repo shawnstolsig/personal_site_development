@@ -24,8 +24,8 @@ const useStyles = makeStyles((theme) => ({
         fontFamily: '\'Baumans\', cursive'
     },
     hoverColor: {
-        color: '#084177'
-    }
+        color: '#084177',
+    },
 }));
 
 // this function adds elevation to the children (in this case an AppBar) when scrolled
@@ -39,7 +39,14 @@ function ElevationScroll(props) {
     // set higher elevation and a solid background color when scroll triggered
     return React.cloneElement(children, {
         elevation: trigger ? 4 : 0,
-        color: trigger ? 'inherit' : 'transparent'
+        color: trigger ? 'inherit' : 'transparent',
+        style: trigger ? { 
+            borderBottomStyle: 'solid',
+            borderImageSlice: 1,
+            borderWidth: '4px',
+            borderImageSource: 'linear-gradient(to left, #537394, #003469',
+            borderImageWidth: '0px 0px 4px 0px'
+         } : null
     });
 }
 
@@ -55,7 +62,7 @@ export default function Navbar(props) {
         <React.Fragment>
             <CssBaseline />
             <ElevationScroll {...props}>
-                <AppBar>
+                <AppBar >
                     <Toolbar>
                         <Typography
                             variant="h6"
