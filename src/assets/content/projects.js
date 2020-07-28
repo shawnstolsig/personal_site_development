@@ -7,7 +7,7 @@ import chirpPreview from '../images/chirp.png'
 import chirpVideo from '../videos/chirp.mp4'
 import portfolioPreview from '../images/portfolio.png'
 import pychallengesPreview from '../images/pyChallenges.png'
-// import pychallengesVideo from '../videos/pyChallenges.mp4'
+import pychallengesVideo from '../videos/pyChallenges.mp4'
 
 
 // data for project cards
@@ -18,8 +18,8 @@ const projects = [
         videoUrl: shiftManagrVideo,
         caption: "A work force management app that enables supervisors to create a graphical representation of their workspace and assign employees to workstations.",
         description: [
-            "The idea behind shiftMANAGR was to create a tool to help a shift leader manage and communicate workstation assignments for their employees. While I specifically designed it as a tool for an Amazon operations leader, shiftMANAGR would create value in any industry where employees are frequently rotated between different roles and/or workstations: hospitals, manufacturing, security, and construction are a few examples.",
-            "I created shiftMANAGR as my capstone project while at PDX Code Guild." 
+            "The idea behind shiftMANAGR was to create a tool to help a shift leader manage and communicate workstation assignments for their employees. While I specifically designed it as a tool for an Amazon operations leader, shiftMANAGR would create value in any industry where employees are frequently rotated between different roles and/or workstations: hospitals, manufacturing, security, and construction are a few examples. I created shiftMANAGR as my capstone project while at PDX Code Guild.",
+            "Note: To demo, click the 'Hosted' button and then login with username 'demo' and password 'ilovetheoffice'." 
         ],
         repoUrl: "https://github.com/shawnstolsig/pdx_code_guild_capstone",
         demoUrl: "https://shiftmanagr.herokuapp.com/",
@@ -28,8 +28,7 @@ const projects = [
     {
         title: "PyChallenges",
         imageUrl: pychallengesPreview,
-        // videoUrl: pychallengesVideo,
-        videoUrl: null,
+        videoUrl: pychallengesVideo,
         caption: "A website for practicing common coding challenges in Python.",
         description: [
             "I wanted to experiment with writing Python in the browser (and also brush up on some algorithms!), so I decided to create a Python coding challenge app similar to HackerRank or Codewars.  This project leverages the Pyodide library for interpreting Python within Javascript.  Pyodide also enables easy translation of Python objects/functions back into Javascript, which helped with writing tests for user's code.  Finally, this app has a full backend for user authentication, tracking user's progress through the coding challenges, and allowing for saving/re-opening code snippets.",

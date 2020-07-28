@@ -14,7 +14,7 @@ const timelineInfo = [
         organization: 'Amazon',
         location: 'Las Vegas, NV',
         position: 'Operations Manager',
-        description: 'I was an Operations Manager at two different Amazon fulfillment centers in Las Vegas. After working in reverse logistics for the first year and a half, I transferred to a traditional fulfillment center operation where I was responsible for all daytime outbound operations and led a team of 215 hourly associates and five salaried managers.',
+        description: 'I was an Operations Manager at two different Amazon fulfillment centers in Las Vegas. After working in reverse logistics for the first year and a half, I transferred to a traditional fulfillment center operation where I was responsible for all daytime outbound operations and led a team of 200+ hourly associates and five salaried managers.',
         imageUrl: 'https://media-exp1.licdn.com/dms/image/C560BAQFdwVGpSOHmgw/company-logo_100_100/0?e=1597881600&v=beta&t=VgxqHoaKf0WbttfhtUbg_2kfQNlrw70wxkDbX8HAVEs',
     },
     {

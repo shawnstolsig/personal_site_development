@@ -36,6 +36,7 @@ const useStyles = makeStyles((theme) => ({
     },
     largeCardMedia: {
         maxHeight: '70vh',
+        height: 'auto',
         maxWidth: '90vw',
         width: 'auto',
     },
